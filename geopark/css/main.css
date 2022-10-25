@@ -1,0 +1,537 @@
+@charset "utf-8";
+
+#main{position:relative;color:#231f20;}
+#visual{position:relative;z-index:5;}
+#visual .slick{position:relative;z-index:3;position:relative;background:#000;}
+#visual .slide{overflow:hidden;height:858px;}
+#visual .slide img{display:block;width:1920px;height:858px;position:absolute;top:50%;left:50%;margin:-429px 0 0 -960px}
+
+#visual .title-bx{position:absolute;color:#fff;top:45%;z-index:5;left:50%;margin-left:-680px;font-family:'KoreanYNSJG4-R';}
+#visual .title-bx p{font-size:24px;line-height:1.2;position:relative;display:inline-block;animation:move2 .35s ease-in-out 1 both;}
+#visual .title-bx p:after{content:'';display:block;background:url(/page/geopark/images/common/sp_geopark.png) -227px -132px no-repeat;image-rendering:-webkit-optimize-contrast;background-size:520px 520px;width:188px;height:90px;position:absolute;right:-203px;top:50%;margin-top:-52px;animation:move3 .35s .2s ease-in-out 1 both;}
+#visual .title-bx h2{line-height:1.2;font-size:72px;margin-top:28px;position:relative;animation:move4 .35s .25s ease-in-out 1 both;}
+#visual .title-bx h2:after{content:'';display:block;width:60px;height:2px;background:#fff;position:absolute;top:-14px;left:0px;animation:move5 .2s .35s ease-in-out 1 both;}
+
+#visual .link{display:block;width:174px;position:absolute;z-index:5;right:45px;bottom:200px;}
+#visual .link img{display:block;width:100%;image-rendering:-webkit-optimize-contrast;position:relative;}
+#visual .link:hover img{animation:move1 .3s ease-in-out infinite alternate;}
+
+#visual .control{position:relative;margin-top:28px}
+#visual .control a{width:40px;height:40px;vertical-align:top;overflow:hidden;text-indent:-9999px;display:inline-block;position:relative;transition:all .1s;background:url(/page/geopark/images/common/sp_geopark.png) -88px -120px no-repeat;background-size:520px 520px;}
+#visual .control a.next{background-position-x:-133px;}
+#visual .control a.pause{background-position-x:-0px;}
+#visual .control a.play{background-position-x:-44px;display:none;}
+#visual .control a:active{transform:scale(.95);}
+#visual .control:after{content:'';display:block;background:url(/page/geopark/images/common/bg02.png) 0 0 repeat;background-size:5px 5px;height:5px;position:absolute;right:0px;left:153px;top:50%;margin-top:-3.5px;}
+
+@keyframes move1{ 
+    0%{top:0;}
+    100%{top:-20px} 
+}
+
+@keyframes move2{ 
+    0%{transform:translateY(-70%)}
+    100%{transform:translateY(0%)} 
+}
+
+@keyframes move3{ 
+    0%{transform:translateY(-35%);opacity:0;}
+    100%{transform:translateY(0%);opacity:1;} 
+}
+
+@keyframes move4{ 
+    0%{transform:translateY(-40%);opacity:0;}
+    100%{transform:translateY(0%);opacity:1;} 
+}
+
+@keyframes move5{ 
+    0%{width:0px;}
+    100%{width:60px;} 
+}
+
+@keyframes move1m{ 
+    0%{top:0;}
+    100%{top:-15px} 
+}
+
+@media (max-width:1399px) {
+    #visual .slide{height:626px;}
+    #visual .slide img{width:1400px;height:626px;margin:-313px 0 0 -700px}
+    #visual .title-bx{top:200px;left:50px;margin-left:0px;}
+    #visual .title-bx p{font-size:18px;font-family:'KoreanYNSJG3-R';}
+    #visual .title-bx p:after{background-position:-113px -66px;background-size:260px 260px;width:94px;height:45px;margin-top:-26px;right:-105px;}
+    #visual .title-bx h2{font-size:50px;margin-top:24px;}
+    #visual .title-bx h2:after{width:40px;height:1px;top:-12px;}
+
+    #visual .link{width:124px;right:30px;bottom:50px;}
+    #visual .link img{animation:move1m .9s ease-in-out infinite alternate;}
+
+    #visual .control{margin-top:23px}
+    #visual .control a{transform:scale(.8);margin-left:-9px;}
+    #visual .control a:active{transform:scale(.75);}
+    #visual .control:after{left:113px;}
+}
+
+@media (max-width:991px) {
+    #visual .slide{height:580px;}
+    #visual .slide img{width:1297px;height:580px;margin:-290px 0 0 -650px}
+    #visual .title-bx{top:170px;left:30px;}
+    #visual .title-bx p{font-size:17px;}
+    #visual .title-bx p:after{background-position:-113px -66px;background-size:260px 260px;width:94px;height:45px;margin-top:-26px;right:-105px;}
+    #visual .title-bx h2{font-size:43px;margin-top:22px;}
+    #visual .link{width:114px;right:20px;bottom:40px;}
+    #visual .control{margin-top:20px}
+}
+
+@media (max-width:760px) {
+    #visual .title-bx{top:auto;left:15px;bottom:50px;width:100%;}
+    #visual .title-bx p{font-size:13px;}
+    #visual .title-bx p:after{background-position:-56.5px -33px;background-size:130px 130px;width:47px;height:22.5px;margin-top:-13px;right:-55px;}
+    #visual .title-bx h2{font-size:38px;margin-top:20px;letter-spacing:0px;}
+    #visual .title-bx h2:after{width:30px;}
+    #visual .title-bx h2 em{display:block;padding:8px 0 0 60px;}
+    #visual .link{width:92px;right:15px;bottom:105px;}
+    #visual .control{margin-top:210px}
+}
+
+#intro{position:relative;margin-top:75px;z-index:10;background:url(/page/geopark/images/main/bg_intro.jpg) center center repeat;background-size:cover;background-attachment:fixed;}
+#intro .tab{border-top-right-radius:5px;white-space:nowrap;;padding:17px;background:#fff;position:absolute;top:-115px;left:-20px;}
+#intro .tab a{display:inline-block;vertical-align:top;height:78px;line-height:78px;color:#fff;font-size:20px;font-family:'KoreanYNSJG4-R';border-radius:5px;overflow:hidden;width:225px;background:url(/page/geopark/images/main/intro01.png) right center no-repeat;background-size:cover;text-align:center;}
+#intro .tab a + a{margin-left:14px;}
+#intro .tab a span{display:inline-block;transition:all .1s;}
+#intro .tab a:hover span{transform:scale(1.1);}
+#intro .tab a:active{transform:scale(.97);transform-origin:50% 50%;}
+
+#intro .tab a:nth-child(2){background-image:url(/page/geopark/images/main/intro02.png);}
+#intro .tab a:nth-child(3){background-image:url(/page/geopark/images/main/intro03.png);}
+#intro .tab a:nth-child(4){background-image:url(/page/geopark/images/main/intro04.png);}
+#intro .tab a:nth-child(5){background-image:url(/page/geopark/images/main/intro05.png);}
+
+#intro .tab a.active{background-image:url(/page/geopark/images/main/intro01_on.png);pointer-events:none;}
+#intro .tab a.active:nth-child(2){background-image:url(/page/geopark/images/main/intro02_on.png);}
+#intro .tab a.active:nth-child(3){background-image:url(/page/geopark/images/main/intro03_on.png);}
+#intro .tab a.active:nth-child(4){background-image:url(/page/geopark/images/main/intro04_on.png);}
+#intro .tab a.active:nth-child(5){background-image:url(/page/geopark/images/main/intro05_on.png);}
+
+#intro .slide{height:655px;position:relative;}
+#intro .slide img{position:relative;display:block;width:806px;top:50%;transform:translateY(-50%);image-rendering:-webkit-optimize-contrast;margin-left:-40px;opacity:0;}
+#intro .slide.slick-current img{animation:move5 .35s ease-in-out 1 both;}
+#intro .slide .text{position:absolute;right:-20px;top:65px;color:#fff;text-align:right;}
+#intro .slide .text h3{font-family:'KoreanYNSJG2-R';line-height:1.2;font-size:36px;word-spacing:-2px;position:relative;z-index:2;white-space:nowrap;}
+#intro .slide .text h3 strong{font-family:'KoreanYNSJG3-R';}
+#intro .slide .text span{display:inline-block;font-family:'KoreanYNSJG4-R';text-align:right;line-height:1.2;font-size:36px;position:relative;margin-top:18px;z-index:2;}
+#intro .slide .text span:after{content:'';display:block;width:190px;height:1px;background:#fff;position:absolute;left:-200px;top:50%;}
+#intro .slide .text em{font-size:210px;font-family:"NanumSquareRound";font-weight:900;opacity:.07;position:absolute;display:block;right:-140px;top:-25px;z-index:1;line-height:1.1;opacity:0;white-space:nowrap;}
+#intro .slide.slick-current .text em{animation:move6 1s .1s ease-in-out 1 both;}
+
+#intro .slide .link{position:absolute;bottom:0;right:0;padding-bottom:40px;z-index:3;height:410px;}
+#intro .slide .link h4{padding-top:70px;text-align:center;line-height:1.3;font-size:40px;color:#1b1b1b;font-family:'KoreanYNSJG2-R';position:relative;}
+#intro .slide .link h4 strong{font-family:'KoreanYNSJG4-R';display:inline-block;}
+#intro .slide .link h4:after{content:'';display:block;width:1px;height:44px;background:#313131;position:absolute;top:0;left:50%;}
+#intro .slide .link > div{margin-top:22px;max-width:472px;text-align:center;} 
+#intro .slide .link > div a{display:inline-block;vertical-align:top;width:130px;height:95px;padding:10px;text-align:center;position:relative;;box-shadow:0px 0px 5px 2px rgba(0,0,0,.2);color:#2f2315;font-size:17px;font-family:'KoreanYNSJG3-R';transition:all .15s;z-index:2;}
+#intro .slide .link > div a + a{margin-left:35px;}
+#intro .slide .link > div a:nth-child(4){margin-left:0;}
+#intro .slide .link > div a span{display:flex;width:100%;height:100%;justify-content:center;align-items:center;transition:all .15s;border:1px solid rgba(255,255,255,0);flex-direction:column;white-space:nowrap;}
+#intro .slide .link > div a:nth-child(n+4){margin-top:30px;}
+#intro .slide .link > div a:hover{color:#fff;box-shadow:none;}
+#intro .slide .link > div a:hover span{border-color:rgba(255,255,255,1);padding-top:10px;}
+#intro .slide .link > div a:hover span:after{content:'→';font-size:24px;font-weight:300;font-family:'Noto Sans KR', sans-serif;line-height:1.4;}
+#intro .slide .link > div a:after{content:'';display:block;z-index:-1;background:#ebebeb;position:absolute;width:100%;height:100%;bottom:0px;right:0px;transition:all .2s;}
+#intro .slide .link > div a:hover:after{background: #3F3693;background: linear-gradient(to bottom, #0ACACF 0%, #3f3693 100%);}
+#intro .slide .link > div a:before{content:'';display:block;z-index:-2;background:url(/page/geopark/images/common/bg01.png) 0 0 repeat;position:absolute;width:100%;height:100%;bottom:-10px;right:-10px;opacity:0;transition:all .2s;}
+#intro .slide .link > div a:hover:before{opacity:.8;}
+
+#intro .slick{position:relative;}
+#intro .slick .slick-list{overflow:visible !important;}
+#intro .slick:before{content:'';display:block;width:804px;height:410px;background:#fff;position:absolute;bottom:0;right:-280px;}
+#intro .slick:after{content:'';display:block;width:824px;height:475px;position:absolute;bottom:-45px;right:-280px;border:1px solid #c9c9c9;}
+
+@keyframes move5{ 
+    0%{transform:translateY(-50%) scale(.5);opacity:0;}
+    100%{transform:translateY(-50%) scale(1);opacity:1;} 
+}
+
+@keyframes move6{ 
+    0%{transform:scale(2.2);opacity:0;}
+    100%{transform:scale(1);opacity:.07;} 
+}
+
+
+@media (max-width:1399px) {
+    #intro{margin-top:45px;}
+    #intro .tab{padding:11px;top:-80px;left:-15px;}
+    #intro .tab a{height:52px;line-height:52px;font-size:16px;width:145px;}
+    #intro .tab a + a{margin-left:10px;}
+    #intro .tab a span{display:inline-block;transition:all .1s;}
+    #intro .tab a:hover span{transform:scale(1.1);}
+    #intro .tab a:active{transform:scale(.97);transform-origin:50% 50%;}
+
+    #intro .slide{height:510px;}
+    #intro .slide img{width:100%;margin-left:-30px;max-width:600px;}
+    #intro .slide .text{right:0px;top:55px;}
+    #intro .slide .text h3{font-size:30px;}
+    #intro .slide .text span{font-size:30px;margin-top:15px;}
+    #intro .slide .text span:after{width:150px;left:-160px;}
+    #intro .slide .text em{font-size:190px;right:-40px;top:-25px;}
+
+    #intro .slide .link{padding-bottom:30px;height:290px;}
+    #intro .slide .link h4{padding-top:45px;font-size:28px;}
+    #intro .slide .link h4:after{height:30px;}
+    #intro .slide .link > div{margin-top:18px;max-width:380px;} 
+    #intro .slide .link > div a{width:100px;height:65px;font-size:14px;}
+    #intro .slide .link > div a + a{margin-left:20px;}
+    #intro .slide .link > div a:nth-child(n+4){margin-top:20px;}
+
+    #intro .slick:before{width:410px;height:290px;right:-20px;}
+    #intro .slick:after{width:437px;height:320px;bottom:-15px;right:-30px;}
+
+    #intro .slide .link > div a:hover:after{background:#ebebeb;}
+    #intro .slide .link > div a:hover span:after,
+    #intro .slide .link > div a:before{display:none;}
+    #intro .slide .link > div a:hover{color:#2f2315;box-shadow:0px 0px 5px 2px rgba(0,0,0,.2);}
+    #intro .slide .link > div a:hover span{border-color:rgba(255,255,255,0);padding-top:0;}
+}
+
+@media (max-width:991px) {
+    
+    #intro{margin-top:40px;}
+    #intro .tab{padding:10px;top:-70px;left:-15px;}
+    #intro .tab a{height:48px;line-height:48px;font-size:13px;width:105px;margin-right:6px;}
+    #intro .tab a + a{margin-left:0px;}
+    #intro .tab a span{display:inline-block;transition:all .1s;}
+    #intro .tab a:hover span{transform:scale(1.1);}
+    #intro .tab a:active{transform:scale(.97);transform-origin:50% 50%;}
+
+    #intro .slide{height:460px;}
+    #intro .slide img{max-width:500px;margin-left:-80px;}
+    #intro .slide:first-child img{margin-left:-30px;}
+    #intro .slide:nth-child(2) img{margin-left:-50px;}
+
+    #intro .slide .text{right:0px;top:35px;}
+    #intro .slide .text h3{font-size:26px;}
+    #intro .slide .text span{font-size:26px;margin-top:15px;}
+    #intro .slide .text span:after{width:150px;left:-160px;}
+    #intro .slide .text em{font-size:170px;right:-30px;top:30px;}
+
+    #intro .slide .link{padding-bottom:30px;height: 230px;}
+    #intro .slide .link h4{padding-top: 35px;font-size:24px;}
+    #intro .slide .link h4:after{height: 25px;}
+    #intro .slide .link > div{margin-top:15px;max-width:320px;} 
+    #intro .slide .link > div a{width: 80px;height:50px;font-size:13px;}
+    #intro .slide .link > div a + a{margin-left:15px;}
+    #intro .slide .link > div a:nth-child(n+4){margin-top:15px;}
+
+    #intro .slick:before{width:350px;height: 230px;right:-20px;}
+    #intro .slick:after{width: 375px;height: 263px;bottom:-15px;right:-30px;}
+}
+
+@media (max-width:760px) {
+    #intro{margin-top: 30px;}
+    #intro .tab{padding:5px 3px 5px 5px;top: -56px;left:-8px;}
+    #intro .tab a{height:46px;line-height:46px;width:72px;margin-right:3px;}
+    #intro .tab a + a{margin-left:0px;}
+    #intro .tab a span{display:inline-block;transition:all .1s;}
+    #intro .tab a:hover span{transform:scale(1.1);}
+    #intro .tab a:active{transform:scale(.97);transform-origin:50% 50%;}
+
+    #intro .slide{height: 535px;}
+    #intro .slide img{max-width: 540px;width: calc(100% + 30px);margin:-25px -15px !important;}
+    #intro .slide:first-child img{margin-top:-25px !important;}
+    #intro .slide:nth-child(2) img{margin-top:-30px !important;}
+
+    #intro .slide .text{right:0px;top:32px;}
+    #intro .slide .text h3{font-size:19px;}
+    #intro .slide .text span{font-size:24px;margin-top:12px;}
+    #intro .slide .text span:after{width:120px;left:-130px;}
+    #intro .slide .text em{font-size:170px;right:-35px;top:65px;}
+
+    #intro .slide .link{height: 144px;padding-bottom: 0;bottom: -15px;}
+    #intro .slide .link h4{padding-top: 25px;font-size:18px;}
+    #intro .slide .link h4 br{display:none;}
+    #intro .slide .link h4:after{height: 15px;}
+    #intro .slide .link > div{margin-top: 13px;max-width:300px;} 
+    #intro .slide .link > div a{width:80px;height:34px;font-size:13px;}
+    #intro .slide .link > div a + a{margin-left: 13px;}
+    #intro .slide .link > div a:nth-child(n+4){margin-top:13px;}
+
+    #intro .slick:before{width: 333px;height: 144px;right:-20px;bottom: -15px;}
+    #intro .slick:after{width: 352px;height: 165px;bottom: -26px;right:-30px;}
+
+}
+
+
+@media (max-width:390px) {
+    #intro .tab a{width:68px;}
+    
+}    
+
+#reservation{position:relative;margin:80px auto 43px;max-width:1400px;font-family:'KoreanYNSJG2-R';}
+#reservation .bx{height:145px;line-height:145px;background:url(/page/geopark/images/main/bg_reservation.jpg) 100% 100% repeat;background-size:cover;border-bottom-right-radius:45px;position:relative;color:#fff;display:block;padding-left:75px;}
+#reservation .bx:before{content:'';display:block;width:100%;height:100%;background:rgba(0,0,0,0);position:absolute;top:0;left:0;border-bottom-right-radius:45px;transition:all .3s;}
+#reservation .bx:hover:before{background:rgba(0,0,0,.35);}
+#reservation .bx h3{position:relative;display:inline-block;font-size:30px;padding-left:58px;z-index:2;}
+#reservation .bx h3 strong{font-family:'KoreanYNSJG4-R';font-weight:normal;padding-left:1px;}
+#reservation .bx h3:before{content:'';display:block;background:url(/page/geopark/images/common/sp_geopark.png) -16px -177px no-repeat;background-size:520px 520px;width:48px;height:46px;position:absolute;top:50%;margin-top:-23px;left:0;image-rendering:-webkit-optimize-contrast;}
+#reservation .bx span{position:absolute;right:123px;display:block;font-size:30px;top:0;z-index:2;}
+#reservation .bx span strong{font-family:'KoreanYNSJG4-R';font-weight:normal;}
+#reservation .bx p{position:relative;display:inline-block;margin:1px 0 0 13px;vertical-align:top;z-index:2;}
+#reservation:before{content:'';display:block;background:url(/page/geopark/images/common/bg01.png) 0 0 repeat;position:absolute;width:100%;height:100%;bottom:-10px;right:-10px;border-bottom-right-radius:45px;}
+#reservation .bx:after{content:'';display:block;background:url(/page/geopark/images/main/reservation01.png) center top no-repeat;background-size:cover;width:338px;height:181px;position:absolute;top:0;right:333px;transition:all .1s;image-rendering:-webkit-optimize-contrast;}
+#reservation .bx:hover:after{filter:grayscale(.9);}
+
+@media (max-width:1399px) {
+    #reservation{margin:50px auto 33px;width:100%;padding:0 20px;}
+    #reservation .bx{height:115px;line-height:115px;border-bottom-right-radius:35px;padding-left:35px;}
+    #reservation .bx:before{display:none;}
+    #reservation .bx h3{font-size:24px;padding-left:43px;margin-top:22px;}
+    #reservation .bx h3:before{transform:scale(.7);transform-origin:0% 50%;}
+    #reservation .bx span{right:35px;font-size:24px;}
+    #reservation .bx p{margin:1px 0 0 8px;font-size:14px;}
+    #reservation:before{border-bottom-right-radius:35px;width:auto;left:10px;right:10px;}
+    #reservation .bx:after{right:175px;transform:scale(.8);transform-origin:50% 0%;}
+}
+
+@media (max-width:991px) {
+    #reservation{margin:45px auto 30px;}
+    #reservation .bx{height:105px;line-height:1.6;border-bottom-right-radius:25px;padding-left:25px;}
+    #reservation .bx h3{font-size:22px;padding-left:40px;}
+    #reservation .bx h3:before{transform:scale(.65);}
+    #reservation .bx span{right:45px;font-size:18px;line-height:1.4;top:50%;transform:translateY(-50%);}
+    #reservation .bx span strong{display:block}
+    #reservation .bx p{margin:3px 0 0 0px;font-size:13px;display:block}
+    #reservation:before{border-bottom-right-radius:25px;width:auto;left:10px;right:10px;}
+    #reservation .bx:after{right:65px;transform:scale(.7);transform-origin:50% 0%;}
+}
+
+@media (max-width:760px) {
+    #reservation{margin:47px -15px 25px;width:calc(100% + 30px)}
+    #reservation .bx{height:90px;line-height:1.6;border-bottom-right-radius:20px;padding-left:15px;}
+    #reservation .bx h3{font-size:20px;padding-left:30px;margin-top:18px;}
+    #reservation .bx h3:before{transform:scale(.5);}
+    #reservation .bx span{right:40px;font-size:15px;}
+    #reservation .bx span strong{display:block}
+    #reservation .bx p{margin:2px 0 0 0px;font-size:12px;}
+    #reservation:before{border-bottom-right-radius:30px;width:auto;left:5px;right:5px;bottom:-5px;}
+    #reservation .bx:after{right:-15px;transform:scale(.6);transform-origin:50% 0%;filter: saturate(0.1);}
+}
+
+
+#vr360{position:relative;padding-top:55px;margin-bottom:95px;background:url(/page/geopark/images/main/bg_vr.jpg) center bottom no-repeat;background-size:1920px 681px;}
+#vr360 .bx{position:relative;z-index:2;display:flex;flex-wrap:wrap;}
+#vr360 h3,
+#vr360 .bx a{width:25%;}
+#vr360 h3{display:flex;color:#313131;font-family:'KoreanYNSJG2-R';font-size:30px;justify-content:center;align-items:center;flex-direction:column;line-height:1.3;}
+#vr360 h3 strong{font-size:40px;font-weight:normal;font-family:'KoreanYNSJG4-R';}
+#vr360 h3.ty02{display:none;}
+
+#vr360 .bx a{padding:0.5px;position:relative;image-rendering:-webkit-optimize-contrast;background:#fff;}
+#vr360 .bx a:before{content:'';display:block;position:absolute;top:0.5px;left:0.5px;right:0.5px;bottom:0.5px;background:rgba(0,0,0,.4);z-index:1;}
+#vr360 .bx a:after{content:'';display:block;position:absolute;top:100px;left:100px;right:100px;bottom:100px;background:rgba(0,0,0,.4);transition:all .2s ease-in-out;z-index:2;opacity:0;}
+#vr360 .bx a img{display:block;width:100%;}
+#vr360 .bx a strong{display:block;color:#fff;font-family:'KoreanYNSJG5-R';font-weight:normal;font-size:24px;line-height:1.3;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);z-index:3;white-space:nowrap;}
+#vr360 .bx a strong em{display:block;text-align:center;font-size:18px;font-family:'KoreanYNSJG2-R';}
+#vr360 .bx a strong:after{content:'';display:block;background:url(/page/geopark/images/common/sp_geopark.png) 0px -252px no-repeat;background-size:520px 520px;width:78px;height:16px;position:absolute;left:50%;margin-left:-39px;bottom:-40px;image-rendering:-webkit-optimize-contrast;transition:all .15s;opacity:0;transform:translateX(-200%);}
+#vr360 .bx a:hover:after{top:10px;left:10px;right:10px;bottom:10px;opacity:1;}
+#vr360 .bx a:hover strong:after{opacity:1;transform:translateX(0);}
+#vr360 > span{display:block;position:absolute;font-family:'KoreanYNSJG5-R';font-size:120px;color:rgba(0,0,0,.05);right:-720px;top:-7px;white-space:nowrap;line-height:1.1;letter-spacing:-2px;word-spacing:-2px;}
+
+@media (max-width:1399px) {
+    #vr360{padding-top:45px;margin-bottom:55px;background-size:cover;}
+    #vr360 .bx{padding:0 32px;}
+    #vr360 h3{font-size:20px}
+    #vr360 h3 strong{font-size:28px;}
+    #vr360 .bx a strong{font-size:18px;}
+    #vr360 .bx a strong em{font-size:14px;}
+    #vr360 .bx a strong:after{display:none;}
+    #vr360 > span{font-size:90px;right:-750px;top:0px;}
+}
+
+@media (max-width:991px) {
+    #vr360{padding-top:32px;margin-bottom:45px;}
+    #vr360 .bx{padding:0px;}
+    #vr360 h3{font-size:16px}
+    #vr360 h3 strong{font-size:22px;}
+    #vr360 .bx a strong{font-size:17px;}
+    #vr360 .bx a strong em{font-size:13px;margin-bottom:3px;}
+    #vr360 > span{font-size:80px;right:-750px;top:0px;}
+}
+
+@media (max-width:760px) {
+    #vr360{padding:45px 0 0 0px;margin-bottom:40px;}
+    #vr360 .bx{padding: 65px 0 15px 15px;margin:0 -15px;display:block;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;white-space:nowrap;position: initial;}
+    #vr360 .bx h3{display:none;}
+    #vr360  h3.ty02{font-size: 15px;position: absolute;top: 3px;left: 15px;align-items: baseline;display:block;width:100%;}
+    #vr360  h3 strong{font-size: 22px;display:block;}
+    #vr360 .bx a{display:inline-block;vertical-align:top;width:37%;max-width:160px;}
+    #vr360 .bx a:last-child{margin-right:10px;}
+    #vr360 .bx a strong{font-size:16px;}
+    #vr360 .bx a strong em{font-size:12px;margin-bottom:3px;}
+    #vr360 > span{font-size:45px;right:auto;left:-11px;top:-12px;}
+}
+
+
+#nofify{position:relative;font-family:'KoreanYNSJG2-R';z-index:5;}
+#nofify h3{line-height:1.1;color:#313131;font-size:40px;position:relative;}
+#nofify h3 span{background:#fff;position:relative;padding-right:30px;}
+#nofify h3 strong{font-family:'KoreanYNSJG5-R';font-weight:normal}
+#nofify h3:before{content:'';display:block;height:1px;position:absolute;top:50%;right:80px;left:0;background:#000;}
+#nofify .more{display:block;position:absolute;width:48px;height:48px;top:-1px;right:0px;background:url(/page/geopark/images/common/sp_geopark.png) -96px -255px no-repeat;background-size:520px 520px;transition:all .15s;color:transparent;font-size:0;image-rendering:-webkit-optimize-contrast;}
+#nofify .more:hover{transform:rotate(90deg);}
+#nofify .bx{margin-top:30px;}
+#nofify .bx a{display:block;position:relative;padding:5px 125px 5px 0px;border-radius:29px 0 0 29px;}
+#nofify .bx a + a{margin-top:13px;}
+#nofify .bx a span{display:block;width:115px;height:58px;line-height:58px;text-align:center;color:#313131;font-size:18px;transition:all .1s;border:1px solid #a0a0a0;background:#fff;;border-radius:29px;position:absolute;top:50%;margin-top:-29px;left:0;font-family:'KoreanYNSJG3-R';}
+#nofify .bx a em{position:absolute;top:50%;margin-top:-0.6em;line-height:1.2em;color:#313131;font-size:18px;display:block;right:0;font-family:'KoreanYNSJG3-R';}
+#nofify .bx a p{overflow:hidden;padding-right:50px;white-space:nowrap;text-overflow:ellipsis;font-size:14px;color:#313131;}
+#nofify .bx a p strong{display:block;font-size:16px;font-family:'KoreanYNSJG3-R';font-weight:normal;margin-bottom:2px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+#nofify .bx a:hover{background:#f5f5f5;}
+#nofify .bx a:hover span{transform:scale(1.1);}
+
+@media (max-width:1399px) {
+    #nofify h3{font-size:30px;}
+    #nofify h3 span{padding-right:20px;}
+    #nofify h3:before{right:60px;}
+    #nofify .more{right:20px;transform:scale(.7);transform-origin:100% 0%;top:0;}
+    #nofify .bx{margin-top:25px;}
+    #nofify .bx a{padding:5px 100px 5px 0px;}
+    #nofify .bx a + a{margin-top:10px;}
+    #nofify .bx a span{width:95px;height:50px;line-height:50px;font-size:16px;margin-top:-25px;}
+    #nofify .bx a em{font-size:15px;}
+    #nofify .bx a p{padding-right:30px;font-size:13px;}
+    #nofify .bx a p strong{font-size:15px;}
+}
+
+@media (max-width:991px) {
+    #nofify h3{font-size:26px;}
+    #nofify h3 span{padding-right:15px;}
+    #nofify h3:before{right:50px;}
+    #nofify .more{transform:scale(.55)}
+    #nofify .bx{margin-top:23px;}
+    #nofify .bx a{padding:5px 100px 5px 0px;}
+    #nofify .bx a + a{margin-top:8px;}
+    #nofify .bx a span{width:85px;height:42px;line-height:42px;font-size:15px;margin-top:-21px;}
+    #nofify .bx a em{font-size:14px;}
+    #nofify .bx a p{padding-right:20px;font-size:12px;}
+    #nofify .bx a p strong{font-size:15px;}
+}
+
+@media (max-width:760px) {
+    #nofify h3{font-size:21px;}
+    #nofify h3 span{padding-right:12px;}
+    #nofify h3:before{right:32px;}
+    #nofify .more{transform:scale(.42);top:2px;right:10px;}
+    #nofify .bx{margin-top:20px;}
+    #nofify .bx a{padding:5px 75px 5px 0;}
+    #nofify .bx a + a{margin-top:7px;}
+    #nofify .bx a span{width:55px;height:36px;line-height:36px;font-size:13px;margin-top:-20px;}
+    #nofify .bx a em{font-size:12px;}
+    #nofify .bx a p{padding-right:0px;font-size:11px;}
+    #nofify .bx a p strong{font-size:14px;}
+}
+
+#sns{position:relative;padding:115px 0 40px;background:url(/page/geopark/images/main/bg_sns.jpg) center bottom no-repeat;background-size:1920px 900px;font-family:'KoreanYNSJG2-R';}
+#sns .title{position:absolute;top:0px;color:#313131;z-index:10;}
+#sns .title h3{line-height:1.2;position:relative;font-size:40px;display:inline-block}
+#sns .title h3 strong{padding-left:3px;font-family:'KoreanYNSJG5-R';font-weight:normal}
+#sns .title h3:after{content:'';display:block;height:1px;width:280px;background:#000;position:absolute;right:-305px;top:50%;}
+#sns .title p{margin-top:25px;line-height:1.2;font-size:22px;}
+#sns:before{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0;background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.1) 20%,rgba(0,0,0,1) 100%);animation:fade1 10s linear alternate infinite;}
+#sns .title div{margin-top:37px;white-space:nowrap;}
+#sns .title div a{display:inline-block;vertical-align:top;font-size:0;color:transparent;width:52px;height:52px;background:url(/page/geopark/images/common/sp_geopark.png) -14px -334px no-repeat;background-size:520px 520px;image-rendering:-webkit-optimize-contrast;}
+#sns .title div a.facebook{background-position-x:-94px;}
+#sns .title div a.insta{background-position-x:-174px;}
+#sns .title div a.utube{background-position-x:-254px;}
+#sns .title div a:hover{animation:move8 .25s linear 1 both;}
+
+#sns ul{position:relative;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;margin:0 -40px 0 -20px;padding:0 0 80px 20px;white-space:nowrap;}
+#sns ul li{display:inline-block;vertical-align:bottom;}
+#sns ul li:nth-child(2) a{bottom:-50px}
+#sns ul li + li{margin-left:15px;}
+#sns ul li a{display:block;position:relative;}
+#sns ul li a + a{margin-top:20px;}
+#sns ul li a img{display:block;max-width:423px;position:relative;transition:all .15s;}
+#sns ul li a:after{content:'';display:block;width:52px;height:52px;background:url(/page/geopark/images/common/sp_geopark.png) -14px -334px no-repeat;background-size:520px 520px;image-rendering:-webkit-optimize-contrast;position:absolute;bottom:15px;left:15px;transition:all .1s;}
+#sns ul li a:hover:after{animation:move7 .4s linear 1 both;}
+#sns ul li a:hover img{filter:grayscale(.9);}
+#sns ul li a.facebook:after{background-position-x:-94px;}
+#sns ul li a.insta:after{background-position-x:-174px;}
+#sns ul li a.utube:after{background-position-x:-254px;}
+
+
+@keyframes fade1{ 
+    0%{opacity:0;}
+    30%{opacity:0;}
+    100%{opacity:1;} 
+}
+
+@keyframes move7{ 
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);} 
+}
+
+@keyframes move8{ 
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-5px);}
+    100%{transform:translateY(0px);}
+}
+
+
+@media (max-width:1399px) {
+    #sns{padding:70px 0 30px;background-size:cover;}
+    #sns .title h3{font-size:30px;display:inline-block;vertical-align:top;}
+    #sns .title h3 strong{padding-left:1px;}
+    #sns .title h3:after{display:none;}
+    #sns .title p{margin:0px 0 0 10px;font-size:16px;display:inline-block;vertical-align:top;margin-top:-2px;}
+    #sns .title div{margin-top:15px;transform:scale(.7);transform-origin:0% 0%;}
+
+    #sns ul{margin:0 -20px 0 -20px;padding:75px 0 50px 20px;}
+    #sns ul li:nth-child(2) a{bottom:-30px}
+    #sns ul li + li{margin-left:10px;}
+    #sns ul li:last-child{margin-right:10px;}
+    #sns ul li a{display:inline-block;position:relative;vertical-align:bottom;}
+    #sns ul li a + a{margin:0px 0 0 10px;}
+    #sns ul li a:nth-child(1):nth-last-child(2){bottom:-30px}
+    #sns ul li a img{max-height:190px}
+    #sns ul li:nth-child(3) a img{max-height:330px;}
+    #sns ul li a:after{transform:scale(.8);transform-origin:0% 100%;}
+}
+
+@media (max-width:991px) {
+    #sns{padding:50px 0 25px;}
+    #sns .title h3{font-size:26px;}
+    #sns .title p{margin:0px 0 0 7px;font-size:14px;margin-top:-2px;}
+    #sns .title div{margin-top:13px;transform:scale(.65);}
+
+    #sns ul{padding:65px 0 45px 20px;}
+    #sns ul li:nth-child(2) a{bottom:-20px}
+    #sns ul li + li{margin-left:7px;}
+    #sns ul li a{display:inline-block;position:relative;vertical-align:bottom;}
+    #sns ul li a + a{margin:0px 0 0 7px;}
+    #sns ul li a:nth-child(1):nth-last-child(2){bottom:-20px}
+    #sns ul li a img{max-height:170px}
+    #sns ul li:nth-child(3) a img{max-height:300px;}
+    #sns ul li a:after{transform:scale(.65);}
+}
+
+@media (max-width:760px) {
+    #sns{padding:45px 0 15px;}
+    #sns .title h3{font-size:21px;}
+    #sns .title p{margin:0px 0 0 5px;font-size:12px;margin-top:-2px;}
+    #sns .title div{margin-top:12px;transform:scale(.6);}
+
+    #sns ul{padding:88px 0 15px 15px;margin:0 -15px;}
+    #sns ul li a{top:-30px;}
+    #sns ul li:nth-child(2) a{bottom:-30px;top:auto;}
+    #sns ul li{vertical-align:middle;}
+    #sns ul li + li{margin-left:3px;}
+    #sns ul li a{vertical-align:middle;}
+    #sns ul li a + a{margin:0px 0 0 3px;}
+    #sns ul li a:nth-child(1):nth-last-child(2){top:-30px;}
+    #sns ul li a:nth-child(2):nth-last-child(1){bottom:-30px;top:auto;}
+    #sns ul li a img{max-height:155px}
+    #sns ul li:nth-child(3) a img{max-height:255px;}
+    #sns ul li:nth-child(3) a{top:0;}
+}
+
